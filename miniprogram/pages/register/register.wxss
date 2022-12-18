@@ -1,0 +1,5 @@
+/* pages/register/register.wxss */
+.homeSiwperImage{
+	width: 100%;
+	height: 100%;
+}

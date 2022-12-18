@@ -1,0 +1,16 @@
+/* components/tab-control/tabControl.wxss */
+.tab-control{
+	display: flex;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+}
+.tab-control .headline{
+	flex: 1;
+}
+.tab-control .headline.active{
+	background-color: skyblue;
+}
+.tab-control .headline.active .title{
+	border-bottom:	3px solid red;
+}

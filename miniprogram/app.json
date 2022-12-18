@@ -1,0 +1,54 @@
+{
+  "pages": [
+		"pages/index/index",
+		"pages/demo1/demo",
+		"pages/profile/profile",
+		"pages/logs/logs",
+		"pages/containers/containerDemo",
+		"pages/register/register",
+		"pages/wxmlDemo/demo",
+		"pages/eventDemo/demo",
+		"pages/component/index",
+		"pages/apiDemo/demo"
+  ],
+  "permission": {
+		"scope.userLocation": {
+			"desc": "需要获取您的位置信息"
+		}
+	},
+  "requiredPrivateInfos": [
+		"getLocation"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ff8189",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#ff8189",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/demo1/demo",
+        "text": "测试",
+        "iconPath": "assets/tabbar/demo.png",
+        "selectedIconPath": "assets/tabbar/demo_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,52 @@
+<!--pages/wxmlDemo/demo.wxml-->
+<!-- Mustache语法 -->
+<wxs module="format" src="/utils/format.wxs"/>
+<view>{{ message }}</view>
+<view>{{ firstName + "" + lastName }}</view>
+<view>{{ date }}</view>
+
+<!-- if else -->
+<block wx:if="{{score > 90}}">
+	<view>优秀</view>
+</block>
+<block wx:elif="{{score > 80}}">
+	<view>良好</view>
+</block>
+<block wx:elif="{{score > 60}}">
+	<view>及格</view>
+</block>
+<block wx:else>
+	<view>不及格</view>
+</block>
+
+<!-- hidden 类似v-show -->
+<button bindtap="shiftHiddenStatus">shift</button>
+<view hidden="{{isHidden}}">this is waiting to be shifted</view>
+
+<!-- wx:for use case -->
+<view>
+	<block wx:for="{{mutiData}}" wx:key="index" wx:for-item="dept">
+		<block wx:for="{{dept.class}}" wx:key="index" wx:for-item="class">
+			<view>
+				{{dept.name}}--{{class}}
+			</view>
+		</block>
+	</block>
+</view>
+
+<!-- wxs use case -->
+<view>
+	{{format.FormatPrice(price)}}
+</view>
+
+<view>
+	{{format.CountPrice(books)}}
+</view>
+
+<view>
+	{{format.FormatCount(price)}}
+</view>
+
+<view>
+	{{format.FormatTime(456)}}
+</view>

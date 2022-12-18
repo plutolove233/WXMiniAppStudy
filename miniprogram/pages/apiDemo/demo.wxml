@@ -1,0 +1,35 @@
+<!--pages/apiDemo/demo.wxml-->
+<!-- net request -->
+<view>
+	<block wx:for="{{houseData}}" wx:key="index">
+		<image src="{{item.data.image.url}}" />
+		<view>
+			{{item.data.houseName}}
+		</view>
+	</block>
+</view>
+
+<!-- 弹窗 -->
+<view>-------------弹窗测试-------------</view>
+<button size="mini" bindtap="onToast">Toast</button>
+<button size="mini" bindtap="onModal">Modal</button>
+<button size="mini" bindtap="onActionSheet">ActionSheet</button>
+
+<!-- system information -->
+<view>
+	-----------------获取设备信息---------------
+</view>
+<button bindtap="onGetSysInfo">system info</button>
+
+
+<!-- page jump -->
+<view>
+	-----------------页面跳转---------------
+</view>
+<button bindtap="onPageJump">jump</button>
+
+<!-- login use case -->
+<view>
+	-----------------登录---------------
+</view>
+<button bindtap="onLogin">login</button>

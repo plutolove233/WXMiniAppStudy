@@ -1,0 +1,6 @@
+<!--components/c-behavior/c-behavior.wxml-->
+<view>
+	<button bindtap="increment" size="mini">+</button>    
+      click-count: {{ counter }}
+    <button bindtap="decrement" size="mini">-</button>
+</view>

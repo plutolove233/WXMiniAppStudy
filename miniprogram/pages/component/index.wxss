@@ -1,0 +1,4 @@
+/* pages/component/index.wxss */
+.abc{
+	background-color: red;
+}

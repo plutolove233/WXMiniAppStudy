@@ -1,0 +1,12 @@
+<!--components/my-slot/m-slot.wxml-->
+<view class="mslot">
+	<view class="left">
+		<slot name="left"></slot>
+	</view>
+	<view class="center">
+		<slot name="center"></slot>
+	</view>
+	<view class="right">
+		<slot name="right"></slot>
+	</view>
+</view>

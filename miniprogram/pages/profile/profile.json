@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "个人首页",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 20
+}

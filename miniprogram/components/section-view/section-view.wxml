@@ -1,0 +1,10 @@
+<!--components/section-view/section-view.wxml-->
+<!-- 自定义组件的基本使用 -->
+<view class="section">
+	<view class="header" bindtap="sectionClick">
+		<text>{{title}}</text>
+	</view>
+	<view class="content info">
+		<text>{{content}}</text>
+	</view>
+</view>

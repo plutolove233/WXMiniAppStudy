@@ -1,0 +1,38 @@
+<!--pages/component/index.wxml-->
+<!-- 通过properties传递值 -->
+<section-view title="老人与海" content="一头雄狮"/>
+
+<!-- 通过externalClass传递样式 -->
+<!-- 样式名需与组件内定义的externalClass的样式名一致 -->
+<section-view info="abc" title="老人与海" content="一头雄狮" />
+
+<!-- 组件事件监听 -->
+<!-- bind:*的监听事件应该与自定义组件内容中返回的函数名相同 通过该方法就可以监听组件内部的事件 -->
+<section-view info="abc" bind:sectionClick="wxmlSectionClick" />
+
+<tab-control 
+	tabHeadline="{{headlines}}"
+	bind:getTabControlIndex="getIndex" 
+/>
+
+<!-- simple slot use case -->
+<my-slot/>
+<my-slot>
+	<text>content</text>
+</my-slot>
+
+<!-- m-slot use case -->
+<m-slot>
+	<view slot="left">
+		left
+	</view>
+	<view slot="right">
+		right
+	</view>
+	<view slot="center">
+		center
+	</view>
+</m-slot>
+
+<!-- behavior use case -->
+<c-behavior/>

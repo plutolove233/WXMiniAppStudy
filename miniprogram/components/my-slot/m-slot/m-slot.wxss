@@ -1,0 +1,13 @@
+/* components/my-slot/m-slot.wxss */
+.mslot{
+	display: flex;
+	text-align: center;
+}
+
+.mslot .left, .right{
+	width: 50px;
+}
+
+.mslot .center{
+	flex: 1;
+}

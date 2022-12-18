@@ -1,0 +1,10 @@
+<!--pages/register/register.wxml-->
+<view>
+	<swiper circular="true" autoplay="true" indicator-dots="true" interval="3000">
+		<block wx:for="{{ banners }}" wx:key="index">
+			<swiper-item>
+				<image src="{{ item.image }}" class="homeSiwperImage"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>

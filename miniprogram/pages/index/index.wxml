@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view>
+	<block wx:for="{{ pages }}" wx:key="index">
+		<button data-navigation="{{ item }}" bindtap="navigationButtonClick">{{ item.name }}</button>
+	</block>
+</view>

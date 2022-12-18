@@ -1,0 +1,41 @@
+<!--pages/containers/containerDemo.wxml-->
+
+<!-- input组件 -->
+<view class="title">
+<input model:value="{{message}}" class="inputStyle" type="text"/>
+<button size="mini" bindtap="jumpBack">back</button>
+</view>
+<input class="weui-input" bindinput="bindKeyInput" placeholder="同步到数据"/>
+
+<!-- scrollview组件 -->
+<scroll-view class="scrollViewContainer" scroll-y>
+	<block wx:for="{{colors}}" wx:key="*this">
+		<view class="item" style="background-color: {{item}};">{{item}}</view>
+	</block>
+</scroll-view>
+
+<scroll-view class="scrollViewContainer scrollX" scroll-x enable-flex>
+	<block wx:for="{{colors}}" wx:key="*this">
+		<view class="item scrollX" style="background-color: {{item}};">{{item}}</view>
+	</block>
+</scroll-view>
+
+<!-- image组件 -->
+<!-- <image src="/assets/zznh.png"/>
+<image src="https://tse4-mm.cn.bing.net/th/id/OIP-C.pf-AywsiMTNDPC5HzkKyNwHaNK?pid=ImgDet&rs=1"/> -->
+<image src="https://tse4-mm.cn.bing.net/th/id/OIP-C.pf-AywsiMTNDPC5HzkKyNwHaNK?pid=ImgDet&rs=1" mode="heightFix"/>
+
+<button bindtap="getLocalPic">选择本地图片上传</button>
+<image src="{{ imgUrl }}" mode="widthFix"/>
+
+<!-- button组件 块级元素，独占一行-->
+<view>-----------button组件--------------</view>
+<button>btn1</button>
+<button size="mini" type="warn">btn2</button>
+<button size="mini" type="primary">btn3</button>
+<button size="mini" hover-class="btn4">btn4</button>
+<button size="mini" bindtap="getUserInfoService">获取用户信息</button>
+
+<!-- text组件-->
+<view>-------------text组件-------------</view>
+<text user-select>Hello World</text>

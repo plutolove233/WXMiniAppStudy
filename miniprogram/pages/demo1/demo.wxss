@@ -1,0 +1,16 @@
+/* pages/demo1/demo.wxss */
+.title{
+  font-size: larger;
+  color: red;
+}
+#message{
+  font-size: 30px;
+  color: green;
+  font-weight: 700;
+}
+.addContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: right;
+}

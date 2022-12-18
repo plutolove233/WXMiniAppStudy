@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"section-view": "/components/section-view/section-view",
+		"tab-control": "/components/tab-control/tabControl",
+		"my-slot": "/components/my-slot/simple-slot/my-slot",
+		"m-slot": "/components/my-slot/m-slot/m-slot",
+		"c-behavior": "../../components/c-behavior/c-behavior"
+	}
+}

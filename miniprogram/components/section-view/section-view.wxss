@@ -1,0 +1,14 @@
+/* components/section-view/section-view.wxss */
+.section{
+	border: 2px solid gray;
+}
+.section .header{
+	font-size: 80rpx;
+	font-weight: 700;
+	color: red;
+}
+
+.section .content{
+	font-size: 48rpx;
+	color: blue;
+}

@@ -1,0 +1,40 @@
+function formatPrice(price) {
+	return '$'+price
+}
+
+function padLeft(time){
+	if ((time+"").length >= 2)	return time;
+	return "0"+time
+}
+
+function countPrice(books) {
+	var cnt = 0;
+	books.forEach(function(item){
+		cnt += item.price
+	})
+	return cnt;
+}
+
+function formatCount(count){
+	var cnt = parseInt(count);
+	if (cnt >= 100000000){
+		return (cnt/100000000).toFixed(1)+"亿";
+	}else if(cnt>10000){
+		return (cnt/10000).toFixed(1)+"万";
+	}else{
+		return cnt;
+	}
+}
+
+function formatTime(sec){
+	var min = Math.floor(sec / 60);
+	sec = Math.floor(sec % 60);
+	return padLeft(min)+":"+padLeft(sec);
+}
+
+module.exports = {
+	FormatPrice: formatPrice,
+	CountPrice: countPrice,
+	FormatCount: formatCount,
+	FormatTime: formatTime,
+}

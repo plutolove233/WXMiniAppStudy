@@ -1,0 +1,21 @@
+<!--pages/eventDemo/demo.wxml-->
+<view class="outer" id="outer" data-name="shyhao" bindtap="clickView">
+	<view class="inner" id="inner" data-address="hahaha"></view>
+</view>
+
+<view class="tab-control">
+	<block wx:for="{{tabHeadline}}" wx:key="index">
+		<view 
+			class="headline {{currentIndex === index ? 'active' : ''}}"
+			bindtap="onItemTap"
+			data-index="{{index}}"
+		>
+			<text class="title">{{item}}</text>
+		</view>
+	</block>
+</view>
+
+<!-- mark use case -->
+<view mark:name="shyhao" mark:address="yancheng" class="mark">
+	<view class="title" mark:demo="demo" bindtap="markTap">HelloWorld</view>
+</view>

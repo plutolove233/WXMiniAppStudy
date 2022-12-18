@@ -1,0 +1,18 @@
+<!--components/my-slot/my-slot.wxml-->
+<view class="myslot">
+	<view class="header">
+		这是个header
+	</view>
+
+	<view class="content">
+		<slot></slot>
+	</view>
+
+	<!-- 设置插槽默认值 -->
+	<view class="default">
+		default content
+	</view>
+	<view class="tail">
+		这是个尾部
+	</view>
+</view>

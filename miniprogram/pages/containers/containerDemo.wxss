@@ -1,0 +1,26 @@
+/* pages/containers/containerDemo.wxss */
+.title{
+	display: flex;
+}
+.scrollViewContainer{
+	height: 120px;
+	background-color: gray;
+}
+
+.item{
+	width: 120px;
+	height: 100px;
+}
+
+.scrollX{
+	display: flex;
+	flex-shrink: 0;
+}
+
+.inputStyle{
+	height: 14px;
+	width: 120px;
+	border: 1px solid;
+	border-width: 3px;
+	border-color: orange;
+}

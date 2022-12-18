@@ -1,0 +1,13 @@
+<!--components/tab-control/tabControl.wxml-->
+<view class="tab-control">
+	<block wx:for="{{tabHeadline}}" wx:key="index">
+		<view 
+			class="headline {{currentIndex === index ? 'active' : ''}}"
+			bindtap="onItemTap"
+			data-index="{{index}}"
+		>
+			<text class="title">{{item}}</text>
+		</view>
+	</block>
+</view>
+

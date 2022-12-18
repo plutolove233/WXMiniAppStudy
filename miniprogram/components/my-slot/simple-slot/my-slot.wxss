@@ -1,0 +1,12 @@
+/* components/my-slot/my-slot.wxss */
+.myslot{
+	margin: 20px;
+}
+
+.default{
+	display: none;
+}
+
+.content:empty + .default{
+	display: block;
+}

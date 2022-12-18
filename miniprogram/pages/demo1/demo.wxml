@@ -1,0 +1,29 @@
+<!-- 普通文本 -->
+<text class="title">
+  this is one plain text
+</text>
+
+<!-- 动态绑定 -->
+<view id="message">
+  {{ message }}
+</view>
+
+<!-- 数组列表渲染 -->
+<view class="title">
+  <block wx:for="{{ movies }}" wx:key="index">
+    <view>
+      {{index}}:{{item}}
+    </view>
+  </block>
+</view>
+
+<!-- 计数器实验 -->
+<block>
+  <view class="addContainer">
+    <button bindtap="incrementClick" size="mini">+</button>
+    
+      click-count: {{ clickCounter }}
+    
+    <button bindtap="decrementClick" size="mini">-</button>
+  </view>
+</block>
